@@ -7,7 +7,15 @@
       appId: "43679710-3aa6-40b5-b4ce-e963ff39b2fd",
     });
   });
+  OneSignal.push(function() {
+  OneSignal.setEmail("example@domain.com")          
+      .then(function(emailId) {
+        // Callback called when email have finished sending
+        console.log("emailId: ", emailId);  
+      }); 
+  });
 </script>
+  
 </head>
 <html>
   Hello, world！
